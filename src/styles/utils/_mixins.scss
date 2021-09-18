@@ -1,0 +1,17 @@
+@mixin gradient-primary-color {
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);
+  color: var(--color-white);
+}
+
+@mixin border-radius {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+@mixin border-radius-active {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}

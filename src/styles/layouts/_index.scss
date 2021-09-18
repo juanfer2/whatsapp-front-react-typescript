@@ -1,0 +1,26 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header main main main"
+    "sidebar main main main";
+
+  .header {
+    grid-area: header;
+    border-bottom: 1px solid var(--color-gray);
+    border-right: 1px solid var(--color-gray);
+  }
+
+  .main {
+    grid-area: main;
+    overflow: scroll;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    padding: 15px;
+    border-right: 1px solid var(--color-gray);
+    overflow: auto;
+  }
+}

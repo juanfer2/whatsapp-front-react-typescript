@@ -1,0 +1,16 @@
+.label.Mui-focused {
+  color: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);;
+}
+
+.MuiInput-underline:after {
+  color: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);;
+}
+
+.MuiInputBase-input,
+.MuiOutlinedInput-input {
+  color: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);;
+
+  &:after {
+    color: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);;
+  }
+}

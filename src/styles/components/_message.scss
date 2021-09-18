@@ -1,0 +1,53 @@
+@use '../utils/mixins';
+
+.message-container {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  &--active {
+    justify-content: flex-end;
+  }
+
+  .image-container {
+    max-height: 50%;
+
+    .image {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      
+      &--active {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+    }
+
+  }
+
+  .message {
+    background: var(--color-gray-white);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    max-width: 50%;
+
+    &--active {
+      background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-blue) 100%);
+      color: var(--color-white);
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+  }
+}
+
+.App {
+  margin: 30px
+}
